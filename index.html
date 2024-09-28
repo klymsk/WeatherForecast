@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <nav>
+        <section class = "search-box">
+            <input type = "text" placeholder = "Введіть місто">
+            <button type = "submit">
+                <img src = "img/search.png" alt = "search">
+            </button>
+        </section>
+    </nav>
+
+    <aside>
+        <section class = "main-now-box">
+            <div class = "city-now">
+                <h1 id = "city-name">Київ</h1>
+                <h2>Зараз</h2>
+            </div>
+            <div class = "temperature-info">
+                <img src = "img/SunCloud.png" alt = "suncloud-img" id = "main-ico">
+
+                <div class = "temperature-now-box">
+                    <h1 id = "temperature-now">25 °C</h1>
+                    <div class = "wind-info">
+                        <h2>Вітер: <span id = "wind-speed">7</span> м/с</h2>
+                        <img src = "img/Wind.png" alt = "wind-ico">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class = "description-weather">
+            <h1>Опис погоди на день:</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur. Sit nunc amet scelerisque purus eros diam arcu sit quam. Metus scelerisque pulvinar ultrices quam euismod habitasse mattis.</h2>
+        </section>
+
+        <img src = "img/Clouds.png" alt = "clouds-background" class = "clouds-background">
+    </aside>
+
+    <main>
+        <header>
+            <h1>7 днів</h1>
+        </header>
+
+        <article>
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Понеділок</h1>
+                    <h2 id = "date">30 вересня</h2>
+                </div>
+
+                <img src = "img/Sun.png" alt = "sun-ico" id = "ico-day1">
+
+                <h1 id = "temperature-day">25 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Вівторок</h1>
+                    <h2 id = "date">1 жовтня</h2>
+                </div>
+
+                <img src = "img/SunCloud.png" alt = "sun-cloud-ico" id = "ico-day2">
+
+                <h1 id = "temperature-day">21 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Середа</h1>
+                    <h2 id = "date-1">2 жовтня</h2>
+                </div>
+
+                <img src = "img/Cloud.png" alt = "cloud-ico" id = "ico-day3">
+
+                <h1 id = "temperature-day">19 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Четвер</h1>
+                    <h2 id = "date">3 жовтня</h2>
+                </div>
+
+                <img src = "img/SunCloud.png" alt = "sun-cloud-ico" id = "ico-day4">
+
+                <h1 id = "temperature-day">20 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">П'ятниця</h1>
+                    <h2 id = "date">4 жовтня</h2>
+                </div>
+
+                <img src = "img/Rain.png" alt = "rain-ico" id = "ico-day5">
+
+                <h1 id = "temperature-day">16 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Субота</h1>
+                    <h2 id = "date">5 жовтня</h2>
+                </div>
+
+                <img src = "img/Cloud.png" alt = "cloud-ico" id = "ico-day6">
+
+                <h1 id = "temperature-day">17 °C</h1>
+            </section>
+
+            <section class = "day-box">
+                <div class = "date-N-day">
+                    <h1 id = "day-week">Неділя</h1>
+                    <h2 id = "date">6 жовтня</h2>
+                </div>
+
+                <img src = "img/SunCloud.png" alt = "sun-cloud-ico" id = "ico-day7">
+
+                <h1 id = "temperature-day">20 °C</h1>
+            </section>
+        </article>
+
+        <section class = "detail-info-box">
+            <header id = "date-section">Сьогодні</header>
+
+            <div class = "detail-weather">
+                <div class = "box-info">
+                    <h1>Температура</h1>
+                    <h2 id = "temperature-detail">+25 <span>°C</span></h2>
+                </div>
+
+                <div class = "box-info">
+                    <h1>Вітер</h1>
+                    <h2 id = "wind-detail">7 <span>м/с</span></h2>
+                </div>
+
+                <div class = "box-info">
+                    <h1>Вологість</h1>
+                    <h2 id = "humidity-detail">62%</h2>
+                </div>
+
+                <div class = "box-info">
+                    <h1>Опади</h1>
+                    <h2 id = "precipitation-detail">5%</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class = "map-box">
+            <header class = "map-title">Карта</header>
+
+            <img src = "img/map.png" alt = "map-img">
+        </section>
+    </main>
+
+    <footer>
+        <p><span>Kyiv</span> - Weather Forecast</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Unbounded";
+    color: #606060;
+}
+
+nav {
+    position: absolute;
+    z-index: 1001;
+    top: 45px;
+    left: 45px;
+}
+
+aside {
+    background: #DDE6ED;
+    width: 30%;
+    padding: 170px 90px 0px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    box-sizing: border-box;
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search-box input {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 100;
+    padding: 15px 30px 15px 30px;
+    border-radius: 20px;
+    width: 15vw;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: white;
+}
+
+.search-box input::placeholder {
+    opacity: 0.5;
+}
+
+.search-box button {
+    background-color: #61D5FF;
+    border-radius: 0PX 20px 20px 20px;
+    padding: 15px 25px;
+    width: 5vw;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-now-box {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.city-now {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-now h1 {
+    font-family: "Unbounded";
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.city-now h2 {
+    font-family: "Unbounded";
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+.temperature-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-info img {
+    max-width: 50%;
+}
+
+.temperature-now-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.temperature-now-box h1 {
+    font-family: "Unbounded";
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.wind-info {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.wind-info h2 {
+    font-family: "Unbounded";
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+.description-weather {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.description-weather h1, h2 {
+    font-family: "Unbounded";
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+.clouds-background {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    max-width: 30%;
+}
