@@ -256,6 +256,11 @@ footer {
     font-weight: 700;
 }
 
+.detail-info-box iframe {
+    width: 20vw;
+    height: 100%;
+}
+
 .detail-weather, .map-box {
     display: flex;
     flex-direction: column;
