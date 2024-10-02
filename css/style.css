@@ -28,7 +28,7 @@ article {
     display: flex;
     flex-direction: row;
     gap: 1.5vw;
-    margin-bottom: 7vw;
+    margin-bottom: 3vw;
 }
 
 nav {
@@ -89,6 +89,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.1s ease;
+}
+
+.search-box button:active {
+    transform: scale(0.9);
 }
 
 .search-box img {
@@ -239,7 +244,11 @@ footer {
 .detail-info-box {
     display: flex;
     flex-direction: row;
-    gap: 10vw;
+    justify-content: space-between;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 3px 10px 15px #D9D9D9;
 }
 
 .detail-info-box header {
@@ -250,19 +259,23 @@ footer {
 .detail-weather, .map-box {
     display: flex;
     flex-direction: column;
-    gap: 5vw;
+    gap: 2vw;
 }
 
 .detail-info-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    column-gap: 3vw;
+    row-gap: 2vw;
 }
 
 .box-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: rgba(182, 182, 182, 0.3);
+    border-radius: 20px;
+    padding: 20px 25px;
 }
 
 .box-info h1 {
