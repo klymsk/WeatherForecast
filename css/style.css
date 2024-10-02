@@ -8,6 +8,7 @@ body {
     flex-direction: row;
     font-family: "Unbounded";
     color: #606060;
+    min-height: 100vh;
 }
 
 main {
@@ -16,7 +17,6 @@ main {
     gap: 50px;
     padding: 3vw 4vw 0vw 4vw;
     box-sizing: border-box;
-    margin-bottom: 50px;
 }
 
 header h1 {
@@ -27,7 +27,7 @@ header h1 {
 article {
     display: flex;
     flex-direction: row;
-    gap: 3vw;
+    gap: 1.5vw;
     margin-bottom: 7vw;
 }
 
@@ -66,7 +66,7 @@ footer {
     font-weight: 100;
     padding: 1vw 5vw 1vw 2vw;
     border-radius: 20px;
-    width: 15vw;
+    width: 12vw;
     border: none;
     outline: none;
     background: none;
@@ -83,7 +83,7 @@ footer {
     padding: 1vw 2vw;
     width: 5vw;
     position: absolute;
-    left: 18vw;
+    left: 16vw;
     border: none;
     cursor: pointer;
     display: flex;
@@ -130,6 +130,7 @@ footer {
 
 .temperature-info img {
     max-width: 50%;
+    filter: drop-shadow(3px 10px 3px rgba(0, 0, 0, 0.2));
 }
 
 .temperature-now-box {
@@ -178,6 +179,7 @@ footer {
     left: 0px;
     bottom: 0px;
     max-width: 20vw;
+    filter: drop-shadow(3px 10px 3px rgba(0, 0, 0, 0.2));
 }
 
 .day-box {
@@ -185,7 +187,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: space-around;
+    width: 8vw;
+    height: 14vw;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid #C9C9C9;
+    background-color: white;
+    font-family: "Unbounded";
+    color: #606060;
+    transition: transform 0.1s ease;
+    cursor: pointer;
+}
+
+.day-box:active {
+    transform: scale(0.9);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .day-box img {
@@ -239,7 +256,7 @@ footer {
 .detail-info-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px 12vw;
+    gap: 80px;
 }
 
 .box-info {
@@ -260,6 +277,7 @@ footer {
 }
 
 footer {
-    font-size: 0.8vw;
+    font-size: 0.5vw;
+    font-weight: 400;
 }
 
